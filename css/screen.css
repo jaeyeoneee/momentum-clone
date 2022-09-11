@@ -1,0 +1,19 @@
+.screen-limit {
+  background-color: white;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) and (min-height: 700px) {
+  .screen-limit {
+    display: none;
+  }
+}

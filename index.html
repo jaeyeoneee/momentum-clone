@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+  </head>
+  <body>
+    <form class="login-form hidden">
+      <div>Hello, what's your name?</div>
+      <input
+        class="login-input"
+        type="text"
+        placeholder="Please write your name"
+        minlength="3"
+        required
+      />
+    </form>
+    <div class="inner-page hidden">
+      <div class="upper-bar">
+        <span class="upper-bar__logout">Logout</span
+        ><span class="upper-bar__weather"></span>
+      </div>
+      <div class="main-box">
+        <div class="main-box__column">
+          <h1 class="main-box__clock">00:00</h1>
+          <h3 class="main-box__greeting"></h3>
+          <input class="main-box__search" type="text" placeholder="Search" />
+          <span class="main-box__lesson"></span>
+          <span class="main-box__author hidden"></span>
+        </div>
+        <div class="main-box__column">
+          <div class="main-box__todo">
+            <span class="main-box__todo-title">To Do List</span>
+            <form class="main-box__todo-form">
+              <input
+                class="main-box__todo-input"
+                type="text"
+                required
+                maxlength="11"
+              />
+            </form>
+            <ul class="main-box__todo-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-limit">
+      <div>
+        Screen adjustment is required. (min-width: 1300px) and (max-width:
+        1600px) and (min-height: 700px) and (max-height: 900px)
+      </div>
+    </div>
+  </body>
+  <script src="js/background.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/lesson.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/logout.js"></script>
+  <script
+    src="https://kit.fontawesome.com/46d0b7c749.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
