@@ -28,7 +28,9 @@
         <div class="main-box__column">
           <h1 class="main-box__clock">00:00</h1>
           <h3 class="main-box__greeting"></h3>
-          <input class="main-box__search" type="text" placeholder="Search" />
+          <form class="main-box__search-form">
+            <input class="main-box__search" type="text" placeholder="Search" />
+          </form>
           <span class="main-box__lesson"></span>
           <span class="main-box__author hidden"></span>
         </div>
@@ -41,6 +43,7 @@
                 type="text"
                 required
                 maxlength="11"
+                placeholder="up to 8 elements"
               />
             </form>
             <ul class="main-box__todo-list"></ul>
@@ -62,6 +65,7 @@
   <script src="js/lesson.js"></script>
   <script src="js/todo.js"></script>
   <script src="js/logout.js"></script>
+  <script src="js/search.js"></script>
   <script
     src="https://kit.fontawesome.com/46d0b7c749.js"
     crossorigin="anonymous"
